@@ -275,7 +275,7 @@ public class SearchFragment extends Fragment implements OnMapReadyCallback {
     private void jsonParse() {
 
        // String url="https://api.myjson.com/bins/hmvi5";
-        String url="https://api.myjson.com/bins/1gby6p";
+        String url="https://pastebin.com/raw/WHHsaqB8";
         JsonObjectRequest request=new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -300,7 +300,7 @@ public class SearchFragment extends Fragment implements OnMapReadyCallback {
                                 String phone=alumni.getString("Broj");
                                 String gen=alumni.getString("Generacija");
                                 String grad=alumni.getString("Grad:");
-                                String opstina=alumni.getString("Opština");
+                                //String opstina=alumni.getString("Opština");
 
                                 switch (grad.trim())
                                 {

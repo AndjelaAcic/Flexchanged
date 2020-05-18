@@ -79,16 +79,16 @@ public class UploadProjectFragment extends Fragment {
 
 
         mButtonChooseImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFileChooser();
-            }
-        });
-        mButtonUpload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(mUploadTask!=null && !mUploadTask.isComplete())
-                {
+                    @Override
+                    public void onClick(View v) {
+                        openFileChooser();
+                    }
+                });
+                    mButtonUpload.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            if(mUploadTask!=null && !mUploadTask.isComplete())
+                            {
                     Toast.makeText(getContext(), "Upload in Progress", Toast.LENGTH_SHORT).show();
                  //   Toast.makeText(MainActivity.this,"!",Toast.LENGTH_LONG).show();
                 }

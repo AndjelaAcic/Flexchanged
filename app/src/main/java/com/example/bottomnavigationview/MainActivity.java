@@ -28,7 +28,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int MY_REQUEST_CODE =7117 ;
+    final int MY_REQUEST_CODE=778;
     List<AuthUI.IdpConfig> providers;
     User mUser;
     public static Context contextOfApplication;
